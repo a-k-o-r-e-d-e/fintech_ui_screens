@@ -1,4 +1,4 @@
-import 'package:fintech_ui_screens/screens/home_page.dart';
+import 'package:fintech_ui_screens/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
           // This is the theme of your application.
           primarySwatch: Colors.blue,
         ),
-        home: HomePage(),
+        home: HomeScreen(),
       ),
     );
   }

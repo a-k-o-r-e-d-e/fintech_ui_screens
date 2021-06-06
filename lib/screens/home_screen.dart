@@ -1,13 +1,14 @@
 import 'dart:math';
 
 import 'package:fintech_ui_screens/constants/app_colors.dart';
+import 'package:fintech_ui_screens/screens/crypto_currency_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomePage extends StatelessWidget {
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -165,7 +166,10 @@ class HomePage extends StatelessWidget {
                     HomepageCard(
                       title: "Crypto\ncurrency",
                       backgroundColor: Color(0xFFEDE4FF),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => CryptoCurrencyScreen()));
+                      },
                       icon: Icon(
                         FlutterIcons.bitcoin_faw5d,
                         size: 45.sp,
