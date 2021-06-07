@@ -381,7 +381,7 @@ class TestPersistentBar extends StatelessWidget {
         inactiveColorPrimary: AppColors.purpleText,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.sync),
+        icon: Icon(FlutterIcons.search_dollar_faw5s),
         title: 'Check Rate',
         activeColorPrimary: AppColors.purpleText,
         inactiveColorPrimary: AppColors.purpleText,
@@ -396,7 +396,7 @@ class TestPersistentBar extends StatelessWidget {
         inactiveColorPrimary: AppColors.purpleText,
       ),
       PersistentBottomNavBarItem(
-        icon: Icon(Icons.account_balance_wallet),
+        icon: Icon(Icons.monetization_on_outlined),
         title: 'Fund Account',
         activeColorPrimary: AppColors.purpleText,
         inactiveColorPrimary: AppColors.purpleText,
