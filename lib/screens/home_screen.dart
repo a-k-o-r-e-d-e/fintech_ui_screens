@@ -93,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                           ),
                           Text(
                             r"₦675,000.01",
-                            style: GoogleFonts.dmSans(
+                            style: GoogleFonts.roboto(
                                 fontSize: 26.sp,
                                 color: AppColors.blueText,
                                 fontWeight: FontWeight.bold),
