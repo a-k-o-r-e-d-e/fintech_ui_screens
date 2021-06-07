@@ -1,16 +1,30 @@
 # fintech_ui_screens
 
-A new Flutter project.
+<h1> Fintech UI </h1>
 
-## Getting Started
+A set of Sample UI Screens built with Flutter
 
-This project is a starting point for a Flutter application.
+<h2> ** ScreenShots </h2>
 
-A few resources to get you started if this is your first Flutter project:
+<h3> Home Screen </h3>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Home Screen](/screenshots/home_screen.png)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<br>
+<br>
+
+<h3> CryptoCurrency Screen </h3>
+
+![CryptoCurrency Screen](/screenshots/crypto_currency_screen.png)
+
+<br>
+<br>
+
+<h5> Account Screen </h5>
+
+![Account Screen](/screenshots/account_screen.png)
+
+<br>
+<br>
+
+<h5> Thank You!!!</h5>
