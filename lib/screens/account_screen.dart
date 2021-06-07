@@ -41,6 +41,7 @@ class TransactionHistoryListItem extends StatelessWidget {
         children: [
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
@@ -52,7 +53,7 @@ class TransactionHistoryListItem extends StatelessWidget {
                     letterSpacing: .11),
               ),
               Container(
-                margin: EdgeInsets.only(left: 5.w),
+                margin: EdgeInsets.only(left: 7.w),
                 child: Text(
                   description,
                   style: GoogleFonts.mavenPro(
