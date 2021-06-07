@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       designSize: Size(375, 812),
       builder: () => MaterialApp(
         title: 'UI Screens Test',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           // This is the theme of your application.
           primarySwatch: Colors.blue,

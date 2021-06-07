@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:vector_math/vector_math.dart' as VMaths;
 
 class CryptoCurrencyScreen extends StatelessWidget {
   const CryptoCurrencyScreen({Key key}) : super(key: key);
@@ -65,8 +64,7 @@ class CryptoCurrencyScreen extends StatelessWidget {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 gradient: LinearGradient(
-                    colors: [Color(0xFF19B8FF), Color(0xFF706EFF)],
-                    transform: GradientRotation(VMaths.radians(89)))),
+                    colors: [Color(0xFF19B8FF), Color(0xFF706EFF)])),
             child: Stack(
               children: [
                 Positioned(

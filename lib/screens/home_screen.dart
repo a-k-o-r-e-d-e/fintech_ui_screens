@@ -1,7 +1,9 @@
 import 'dart:math';
 
 import 'package:fintech_ui_screens/constants/app_colors.dart';
+import 'package:fintech_ui_screens/screens/account_screen.dart';
 import 'package:fintech_ui_screens/screens/crypto_currency_screen.dart';
+import 'package:fintech_ui_screens/widgets/profile_picture_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_icons/flutter_icons.dart';
@@ -19,28 +21,18 @@ class HomeScreen extends StatelessWidget {
             children: [
               ListTile(
                 dense: true,
-                leading: Container(
-                  width: 40,
-                  height: 40,
-                  decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: Color(0xFF00C2FF).withOpacity(0.31)),
-                  child: Container(
-                    width: 30,
-                    height: 30,
-                    margin: const EdgeInsets.all(5),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle, color: Color(0xFF00C2FF)),
-                    child: Center(
-                      child: Text(
-                        "SA",
-                        style: GoogleFonts.spaceGrotesk(
-                            fontSize: 14.sp,
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            height: 1.21),
-                      ),
-                    ),
+                leading: ProfilePictureWidget(
+                  outerCircleSize: 40,
+                  innerCircleSize: 30,
+                  outerCircleColor: Color(0xFF00C2FF).withOpacity(0.31),
+                  innerCircleColor: Color(0xFF00C2FF),
+                  child: Text(
+                    "SA",
+                    style: GoogleFonts.spaceGrotesk(
+                        fontSize: 14.sp,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        height: 1.21),
                   ),
                 ),
                 title: Text(
@@ -100,7 +92,7 @@ class HomeScreen extends StatelessWidget {
                                 fontSize: 13.sp, color: AppColors.blueText),
                           ),
                           Text(
-                            "\₦675,000.01",
+                            r"₦675,000.01",
                             style: GoogleFonts.dmSans(
                                 fontSize: 26.sp,
                                 color: AppColors.blueText,
@@ -179,7 +171,10 @@ class HomeScreen extends StatelessWidget {
                     HomepageCard(
                       title: "Account\nstatement",
                       backgroundColor: Color(0xFFE3FFEF),
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => AccountScreen()));
+                      },
                       icon: Icon(
                         FlutterIcons.file_invoice_faw5s,
                         size: 45.sp,
